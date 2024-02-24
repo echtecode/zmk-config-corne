@@ -45,6 +45,8 @@
             label = "SHIFT_CAPSLOCK";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
+
+            tapping-term-ms = <350>;
         };
     };
 
