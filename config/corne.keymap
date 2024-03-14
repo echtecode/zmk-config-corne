@@ -92,7 +92,7 @@
 
             bindings = <
 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREV  &kp C_STOP    &kp C_PLAY_PAUSE  &kp C_NEXT       &kp LG(LA(I))         &kp LG(LEFT)      &kp UP_ARROW   &kp LG(RIGHT)      &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
-&trans                &kp LEFT_SHIFT        &kp LCTRL   &kp LEFT_ALT  &kp LCMD          &kp LG(GRAVE)    &kp GRAVE             &kp LEFT          &kp DOWN       &kp RIGHT          &kp BACKSPACE          &kp K_MUTE
+&trans                &kp LEFT_SHIFT        &kp LCTRL   &kp LEFT_ALT  &kp LCMD          &kp LG(GRAVE)    &trans                &kp LEFT          &kp DOWN       &kp RIGHT          &kp BACKSPACE          &kp K_MUTE
 &trans                &kp LG(Z)             &kp LG(X)   &kp LG(C)     &kp LG(V)         &trans           &kp LG(LA(LC(LEFT)))  &kp LG(LA(LEFT))  &kp LG(LA(F))  &kp LG(LA(RIGHT))  &kp LG(LA(LC(RIGHT)))  &trans
                                                         &to 0         &trans            &trans           &kp LG(LC(Q))         &trans            &trans
             >;
