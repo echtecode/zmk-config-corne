@@ -118,7 +118,7 @@
 &kp ESC  &trans          &trans     &trans        &kp LG(P)  &kp LG(LS(P))    &kp LG(LA(I))         &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)      &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
 &trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &kp LG(LA(F))         &kp LEFT          &kp DOWN      &kp RIGHT          &kp BACKSPACE          &kp K_MUTE
 &trans   &kp LG(Z)       &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &kp LG(LA(LC(LEFT)))  &kp LG(LA(LEFT))  &to 0         &kp LG(LA(RIGHT))  &kp LG(LA(LC(RIGHT)))  &trans
-                                    &trans        &trans     &trans           &kp LG(LC(ENTER))     &kp SPACE         &to 0
+                                    &trans        &trans     &trans           &kp ENTER             &kp SPACE         &to 0
             >;
         };
 
