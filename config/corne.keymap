@@ -72,6 +72,13 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <24 25 26 27 28 11 23 7 8 9 10 11 19 20 21 22 23 31 32 33 34 35 30 6 18 5 17 29 16 4 3 2 0 1 12 13 14 15>;
         };
+
+        tapdance_layer_1: tapdance_layer_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_LAYER_1";
+            #binding-cells = <0>;
+            bindings = <&sl 1>, <&to 1>;
+        };
     };
 
     macros {
