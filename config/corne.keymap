@@ -74,6 +74,15 @@
         };
     };
 
+    macros {
+        browser_reset_size: browser_reset_size {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(PLUS) &kp LG(NUMBER_0)>;
+            label = "BROWSER_RESET_SIZE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -100,10 +109,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR            &kp PERCENT     &kp CARET           &kp AMPERSAND      &kp MINUS        &kp UNDERSCORE         &kp ASTERISK      &kp PLUS              &kp LG(KP_PLUS)
-&trans           &kp SLASH    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp LG(N0)
-&kp CAPS         &kp TILDE    &kp GRAVE      &kp DOUBLE_QUOTES     &kp SQT         &kp EQUAL           &kp COLON          &kp SEMICOLON    &to 0                  &kp QUESTION      &kp PIPE              &kp LG(MINUS)
-                                             &trans                &trans          &trans              &kp RET            &kp SPACE        &to 0
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR            &kp PERCENT     &kp CARET           &kp AMPERSAND      &kp MINUS        &kp UNDERSCORE         &kp ASTERISK      &kp PLUS              &browser_reset_size
+&trans           &kp SLASH    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp ENTER
+&kp CAPS         &kp TILDE    &kp GRAVE      &kp DOUBLE_QUOTES     &kp SQT         &kp EQUAL           &kp COLON          &kp SEMICOLON    &kp PERIOD             &kp QUESTION      &kp PIPE              &kp LG(MINUS)
+                                             &trans                &trans          &trans              &to 0              &kp SPACE        &trans
             >;
         };
 
@@ -115,10 +124,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &trans          &trans     &trans        &kp LG(P)  &kp LG(LS(P))    &kp LG(LA(I))         &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)      &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
-&trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &kp LG(LA(F))         &kp LEFT          &kp DOWN      &kp RIGHT          &kp BACKSPACE          &kp K_MUTE
-&trans   &kp LG(Z)       &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &kp LG(LA(LC(LEFT)))  &kp LG(LA(LEFT))  &to 0         &kp LG(LA(RIGHT))  &kp LG(LA(LC(RIGHT)))  &trans
-                                    &trans        &trans     &trans           &kp ENTER             &kp SPACE         &to 0
+&kp ESC  &trans          &trans     &trans        &kp LG(P)  &kp LG(LS(P))    &kp LG(LA(I))         &kp LG(LEFT)      &kp UP_ARROW   &kp LG(RIGHT)      &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
+&trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &trans                &kp LEFT          &kp DOWN       &kp RIGHT          &kp BACKSPACE          &kp ENTER
+&trans   &kp LG(Z)       &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &kp LG(LA(LC(LEFT)))  &kp LG(LA(LEFT))  &kp LG(LA(F))  &kp LG(LA(RIGHT))  &kp LG(LA(LC(RIGHT)))  &kp K_MUTE
+                                    &trans        &trans     &trans           &to 0                 &kp SPACE         &trans
             >;
         };
 
