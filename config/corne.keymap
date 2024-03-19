@@ -119,7 +119,7 @@
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR            &kp PERCENT     &kp CARET           &kp AMPERSAND      &kp MINUS        &kp UNDERSCORE         &kp ASTERISK      &kp PLUS              &browser_reset_size
 &trans           &kp SLASH    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp ENTER
 &kp CAPS         &kp TILDE    &kp GRAVE      &kp DOUBLE_QUOTES     &kp SQT         &kp EQUAL           &kp COLON          &kp SEMICOLON    &kp PERIOD             &kp QUESTION      &kp PIPE              &kp LG(MINUS)
-                                             &trans                &trans          &trans              &to 0              &kp SPACE        &trans
+                                             &trans                &trans          &trans              &to 0              &kp SPACE        &kp LG(K)
             >;
         };
 
