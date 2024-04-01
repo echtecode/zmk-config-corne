@@ -117,7 +117,7 @@
 &kp ESC         &kp Q                          &kp W                          &kp E                            &kp R                       &kp T                 &kp Y               &kp U                        &kp I                              &kp O                            &kp P          &kp DELETE
 &kp TAB         &homerow_mods_left LEFT_GUI A  &homerow_mods_left LEFT_ALT S  &homerow_mods_left LEFT_SHIFT D  &homerow_mods_left LCTRL F  &numbers_layer 3 G    &numbers_layer 3 H  &homerow_mods_right RCTRL J  &homerow_mods_right RIGHT_SHIFT K  &homerow_mods_right RIGHT_ALT L  &kp BACKSPACE  &kp LA(NUMBER_1)
 &kp LEFT_SHIFT  &kp Z                          &homerow_mods_left LCTRL X     &homerow_mods_left LEFT_ALT C    &kp V                       &kp B                 &kp N               &kp M                        &kp COMMA                          &kp DOT                          &kp RIGHT_ALT  &kp RCTRL
-                                                                              &kp LGUI                         &layer_1 1 1                &to 2                 &kp RET             &kp SPACE                    &kp LS(LC(LALT))
+                                                                              &kp LGUI                         &layer_1 1 1                &layer_2 2 2          &kp RET             &kp SPACE                    &kp LS(LC(LALT))
             >;
         };
 
