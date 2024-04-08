@@ -100,7 +100,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NVIM_SAVE_EXIT";
             #binding-cells = <0>;
-            bindings = <&nvim_save>, <&nvim_save_exit>, <&nvim_save_quit_all>;
+            bindings = <&nvim_save>, <&nvim_save_quit>, <&nvim_save_quit_all>;
         };
 
         number_layer_left: number_layer_left {
@@ -146,21 +146,21 @@
         nvim_save: nvim_save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp W>;
+            bindings = <&kp COLON &kp W &kp RETURN>;
             label = "NVIM_SAVE";
         };
 
         nvim_save_quit: nvim_save_quit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp Q>;
+            bindings = <&kp COLON &kp W &kp Q &kp RETURN>;
             label = "NVIM_SAVE_QUIT";
         };
 
         nvim_save_quit_all: nvim_save_quit_all {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp Q &kp A>;
+            bindings = <&kp COLON &kp W &kp Q &kp A &kp RETURN>;
             label = "NVIM_SAVE_QUIT_ALL";
         };
     };
