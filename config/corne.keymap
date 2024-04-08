@@ -176,10 +176,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC         &kp Q                          &kp W                          &kp E                            &number_layer_left 3 R      &kp T           &kp Y                          &kp U                        &kp I                               &kp O                            &kp P            &kp DELETE
-&kp TAB         &homerow_mods_left LEFT_GUI A  &homerow_mods_left LEFT_ALT S  &homerow_mods_left LEFT_SHIFT D  &homerow_mods_left LCTRL F  &kp G           &kp H                          &homerow_mods_right RCTRL J  &homerow_mods_right RIGHT_SHIFT K   &homerow_mods_right RIGHT_ALT L  &kp BACKSPACE    &kp LA(NUMBER_1)
-&kp LEFT_SHIFT  &kp Z                          &kp X                          &kp C                            &kp V                       &kp B           &kp N                          &kp M                        &kp COMMA                           &kp DOT                          &nvim_save_exit  &number_layer_right 3 ESC
-                                                                              &kp LCTRL                        &layer_1 1 1                &layer_2 2 2    &thumb_mods LEFT_SHIFT RETURN  &thumb_mods LCTRL SPACE      &thumb_mods LC(LS(LEFT_ALT)) LC(B)
+&kp ESC         &kp Q  &kp W  &kp E                          &number_layer_left 3 R     &kp T           &kp Y                          &kp U                       &kp I                               &kp O    &kp P            &kp DELETE
+&kp TAB         &kp A  &kp S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &kp G           &kp H                          &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K     &kp L    &kp BACKSPACE    &kp LA(NUMBER_1)
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                          &kp V                      &kp B           &kp N                          &kp M                       &kp COMMA                           &kp DOT  &nvim_save_exit  &number_layer_right 3 ESC
+                              &kp LCTRL                      &layer_1 1 1               &layer_2 2 2    &thumb_mods LEFT_SHIFT RETURN  &thumb_mods LCTRL SPACE     &thumb_mods LC(LS(LEFT_ALT)) LC(B)
             >;
         };
 
