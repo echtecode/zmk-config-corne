@@ -145,7 +145,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_LAYER_SWITCH";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 1>, <&mo 2>, <&to 2>;
         };
     };
 
@@ -222,7 +222,7 @@
             bindings = <
 &kp ESC  &trans          &trans     &trans        &kp LG(P)  &kp LG(LS(P))    &kp LG(LA(I))         &kp LG(LEFT)      &kp UP_ARROW   &kp LG(RIGHT)      &kp C_VOLUME_DOWN      &kp C_VOLUME_UP
 &trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &trans                &kp LEFT          &kp DOWN       &kp RIGHT          &kp BACKSPACE          &kp ENTER
-&trans   &kp LG(Z)       &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &kp LG(LA(LC(LEFT)))  &kp LG(LA(LEFT))  &kp LG(LA(F))  &kp LG(LA(RIGHT))  &kp LG(LA(LC(RIGHT)))  &kp K_MUTE
+&mo 3    &kp LG(Z)       &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &kp LG(LA(LC(LEFT)))  &kp LG(LA(LEFT))  &kp LG(LA(F))  &kp LG(LA(RIGHT))  &kp LG(LA(LC(RIGHT)))  &kp K_MUTE
                                     &trans        &trans     &trans           &to 0                 &kp SPACE         &trans
             >;
         };
