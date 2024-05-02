@@ -141,11 +141,18 @@
             bindings = <&mo 3>, <&to 0>;
         };
 
-        tapdance_layer_switch: tapdance_layer_switch {
+        tapdance_space_colon: tapdance_space_colon {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_LAYER_SWITCH";
+            label = "TAPDANCE_SPACE_COLON";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>, <&to 2>;
+            bindings = <&kp SPACE>, <&kp COLON>;
+        };
+
+        tapdance_cmd_cmdbacktick: tapdance_cmd_cmdbacktick {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_CMD_CMDBACKTICK";
+            #binding-cells = <0>;
+            bindings = <&kp LCMD>, <&kp LG(GRAVE)>;
         };
     };
 
@@ -190,10 +197,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E                          &number_layer_left 3 R     &kp T             &kp Y       &kp U                       &kp I                            &kp O    &kp P          &kp DELETE
-&kp TAB  &kp A  &kp S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &kp G             &kp H       &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE  &kp LA(NUMBER_1)
-&mo 3    &kp Z  &kp X  &kp C                          &kp V                      &kp B             &kp N       &kp M                       &kp COMMA                        &kp DOT  &kp LCMD       &kp LC(B)
-                       &kp LCTRL                      &tapdance_layer_switch     &kp LEFT_SHIFT    &kp RETURN  &kp SPACE                   &kp LS(LA(LCTRL))
+&kp ESC  &kp Q  &kp W  &kp E                          &number_layer_left 3 R     &kp T             &kp Y       &kp U                       &kp I                            &kp O    &kp P                      &kp DELETE
+&kp TAB  &kp A  &kp S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &kp G             &kp H       &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE              &kp LA(NUMBER_1)
+&mo 3    &kp Z  &kp X  &kp C                          &kp V                      &kp B             &kp N       &kp M                       &kp COMMA                        &kp DOT  &tapdance_cmd_cmdbacktick  &kp LC(B)
+                       &kp LCTRL                      &tapdance_space_colon      &kp LEFT_SHIFT    &kp RETURN  &tapdance_space_colon       &kp LS(LA(LCTRL))
             >;
         };
 
@@ -208,7 +215,7 @@
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR            &kp PERCENT        &kp CARET           &kp AMPERSAND      &kp MINUS        &kp UNDERSCORE         &kp ASTERISK      &kp PLUS              &browser_reset_size
 &trans           &kp SLASH    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp RETURN
 &kp CAPS         &kp TILDE    &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp COLON          &kp SEMICOLON    &kp PERIOD             &kp QUESTION      &kp PIPE              &resize_browser
-                                             &trans                &trans             &trans              &kp RETURN         &kp SPACE        &kp COLON
+                                             &trans                &trans             &trans              &kp RETURN         &kp SPACE        &kp LCMD
             >;
         };
 
