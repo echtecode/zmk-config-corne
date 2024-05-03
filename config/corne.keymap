@@ -73,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_LAYER_SWITCH";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 1>, <&mo 2>, <&to 2>;
         };
     };
 
