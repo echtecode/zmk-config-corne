@@ -66,7 +66,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_LAYER_SWITCH";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>, <&to 2>;
+            bindings = <&mo 1>, <&to 2>;
         };
 
         tapdance_numbers_layer: tapdance_numbers_layer {
@@ -74,13 +74,6 @@
             label = "TAPDANCE_NUMBERS_LAYER";
             #binding-cells = <0>;
             bindings = <&mo 3>, <&mo 3>;
-        };
-
-        tapdance_tmux_and_symbol: tapdance_tmux_and_symbol {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_TMUX_AND_SYMBOL";
-            #binding-cells = <0>;
-            bindings = <&kp LC(A)>, <&kp GREATER_THAN>;
         };
 
         homerow_amethyst: homerow_amethyst {
@@ -93,6 +86,18 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <14 15 16 18 21 20 19 31 30 25 7 8 5>;
+        };
+
+        homerow_navigation_layer: homerow_navigation_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_NAVIGATION_LAYER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <21 20 19 7 8 9 15 16 38 36>;
         };
     };
 
@@ -137,10 +142,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC                  &kp Q  &kp W                             &kp E                          &kp R                      &kp T             &kp Y       &kp U                       &kp I                            &kp O    &kp P                      &kp DELETE
-&kp TAB                  &kp A  &homerow_amethyst LS(LEFT_ALT) S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &kp G             &kp H       &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE              &kp LA(NUMBER_1)
-&tapdance_numbers_layer  &kp Z  &kp X                             &kp C                          &kp V                      &kp B             &kp N       &kp M                       &kp COMMA                        &kp DOT  &tapdance_cmd_cmdbacktick  &kp LC(A)
-                                                                  &kp LCTRL                      &tapdance_layer_switch     &kp LEFT_SHIFT    &kp RETURN  &tapdance_space_colon       &kp LS(LA(LCTRL))
+&kp ESC                  &kp Q                          &kp W                             &kp E                          &kp R                      &kp T             &kp Y       &kp U                       &kp I                            &kp O    &kp P                      &kp DELETE
+&kp TAB                  &homerow_navigation_layer 2 A  &homerow_amethyst LS(LEFT_ALT) S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &kp G             &kp H       &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE              &kp LA(NUMBER_1)
+&tapdance_numbers_layer  &kp Z                          &kp X                             &kp C                          &kp V                      &kp B             &kp N       &kp M                       &kp COMMA                        &kp DOT  &tapdance_cmd_cmdbacktick  &kp LC(A)
+                                                                                          &kp LCTRL                      &tapdance_layer_switch     &kp LEFT_SHIFT    &kp RETURN  &kp SPACE                   &kp LS(LA(LCTRL))
             >;
         };
 
@@ -167,10 +172,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &trans          &trans     &trans        &trans     &trans           &kp LG(LA(I))  &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT_ARROW)  &trans         &trans
-&trans   &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &trans         &kp LEFT            &kp DOWN      &kp RIGHT            &kp BACKSPACE  &kp ENTER
-&mo 3    &kp LG(Z)       &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &trans         &trans              &trans        &trans               &trans         &trans
-                                    &trans        &trans     &trans           &to 0          &kp SPACE           &trans
+&kp ESC  &trans     &trans     &trans        &trans     &trans           &kp LG(LA(I))  &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT_ARROW)  &trans         &trans
+&trans   &trans     &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &trans         &kp LEFT            &kp DOWN      &kp RIGHT            &kp BACKSPACE  &kp ENTER
+&mo 3    &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &trans         &trans              &trans        &trans               &trans         &trans
+                               &trans        &trans     &trans           &to 0          &kp SPACE           &trans
             >;
         };
 
