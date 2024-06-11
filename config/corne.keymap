@@ -173,7 +173,7 @@
 
             bindings = <
 &kp ESC  &trans     &trans     &trans        &trans     &trans           &kp LG(LA(I))  &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT_ARROW)  &trans         &trans
-&trans   &trans     &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &trans         &kp LEFT            &kp DOWN      &kp RIGHT            &kp BACKSPACE  &kp ENTER
+&trans   &trans     &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &kp LG(LA(U))  &kp LEFT            &kp DOWN      &kp RIGHT            &kp BACKSPACE  &kp ENTER
 &mo 3    &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &trans         &trans              &trans        &trans               &trans         &trans
                                &trans        &trans     &trans           &to 0          &kp SPACE           &trans
             >;
