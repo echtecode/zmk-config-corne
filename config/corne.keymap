@@ -142,10 +142,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC                  &kp Q                          &kp W                             &kp E                          &kp R                      &kp T             &kp Y       &kp U                       &kp I                            &kp O    &kp P                      &kp LC(B)
-&kp TAB                  &homerow_navigation_layer 2 A  &homerow_amethyst LS(LEFT_ALT) S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &kp G             &kp H       &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE              &kp LA(NUMBER_1)
-&tapdance_numbers_layer  &kp Z                          &kp X                             &kp C                          &kp V                      &kp B             &kp N       &kp M                       &kp COMMA                        &kp DOT  &tapdance_cmd_cmdbacktick  &kp DELETE
-                                                                                          &kp LCTRL                      &tapdance_layer_switch     &kp LEFT_SHIFT    &kp RETURN  &kp SPACE                   &kp LS(LA(LCTRL))
+&kp ESC                  &kp Q                          &kp W                             &kp E                          &kp R                      &kp T                            &kp Y                           &kp U                       &kp I                            &kp O    &kp P                      &kp LC(B)
+&kp TAB                  &homerow_navigation_layer 2 A  &homerow_amethyst LS(LEFT_ALT) S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &homerow_mods_left LS(LCMD) G    &homerow_mods_right LS(LCMD) H  &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE              &kp LA(NUMBER_1)
+&tapdance_numbers_layer  &kp Z                          &kp X                             &kp C                          &kp V                      &kp B                            &kp N                           &kp M                       &kp COMMA                        &kp DOT  &tapdance_cmd_cmdbacktick  &kp DELETE
+                                                                                          &kp LCTRL                      &tapdance_layer_switch     &kp LEFT_SHIFT                   &kp RETURN                      &kp SPACE                   &kp LS(LA(LCTRL))
             >;
         };
 
