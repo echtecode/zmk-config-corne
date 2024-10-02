@@ -99,6 +99,17 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <21 20 19 7 8 9 15 16 38 36>;
         };
+
+        homerow_mods: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -131,6 +142,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        mo-layer-2 {
+            bindings = <&mo 2>;
+            key-positions = <15 16>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -142,10 +162,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC                  &kp Q                          &kp W                             &kp E                          &kp R                      &kp T                            &kp Y                           &kp U                       &kp I                            &kp O    &kp P                      &kp LC(B)
-&kp TAB                  &homerow_navigation_layer 2 A  &homerow_amethyst LS(LEFT_ALT) S  &homerow_mods_left LEFT_ALT D  &homerow_mods_left LCMD F  &homerow_mods_left LS(LCMD) G    &homerow_mods_right LS(LCMD) H  &homerow_mods_right RCMD J  &homerow_mods_right RIGHT_ALT K  &kp L    &kp BACKSPACE              &kp LA(NUMBER_1)
-&tapdance_numbers_layer  &kp Z                          &kp X                             &kp C                          &kp V                      &kp B                            &kp N                           &kp M                       &kp COMMA                        &kp DOT  &tapdance_cmd_cmdbacktick  &kp DELETE
-                                                                                          &kp LCTRL                      &tapdance_layer_switch     &kp LEFT_SHIFT                   &kp RETURN                      &kp SPACE                   &kp LS(LA(LCTRL))
+&trans  &kp Q                          &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R  &kp T             &kp Y       &kp U      &homerow_mods LG(LA(I)) I  &kp O    &kp P             &trans
+&trans  &homerow_navigation_layer 2 A  &homerow_amethyst LG(S) S  &kp D                  &kp F                      &kp G             &kp H       &kp J      &kp K                      &kp L    &kp BACKSPACE     &trans
+&trans  &homerow_mods LG(Z) Z          &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B             &kp N       &kp M      &kp COMMA                  &kp DOT  &kp LA(NUMBER_1)  &trans
+                                                                  &kp LCTRL              &tapdance_layer_switch     &kp LEFT_SHIFT    &kp RETURN  &kp SPACE  &tapdance_cmd_cmdbacktick
             >;
         };
 
@@ -157,10 +177,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR            &kp PERCENT        &kp CARET           &kp AMPERSAND      &kp MINUS        &kp UNDERSCORE         &kp ASTERISK      &kp PLUS              &browser_reset_size
-&kp LG(LA(I))    &kp SLASH    &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &kp RETURN
-&kp CAPS         &kp TILDE    &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp COLON          &kp SEMICOLON    &kp PERIOD             &kp QUESTION      &kp PIPE              &resize_browser
-                                             &trans                &trans             &trans              &kp F1             &kp F2           &kp F3
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK          &trans
+&trans  &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &trans
+&trans  &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION      &kp PIPE              &trans
+                                        &trans                &trans             &trans              &kp F1             &kp F2           &kp F3
             >;
         };
 
@@ -172,19 +192,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESC  &trans     &trans     &trans        &trans     &trans           &kp LG(LA(I))  &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &trans            &trans
-&trans   &trans     &kp LCTRL  &kp LEFT_ALT  &kp LCMD   &kp LG(GRAVE)    &kp LG(LA(U))  &kp LEFT            &kp DOWN          &kp RIGHT            &kp BACKSPACE     &kp ENTER
-&mo 3    &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V)  &trans           &trans         &kp LG(NUMBER_1)    &kp LG(NUMBER_2)  &kp LG(NUMBER_3)     &kp LG(NUMBER_4)  &kp LG(NUMBER_5)
-                               &trans        &trans     &trans           &to 0          &kp SPACE           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT_ARROW)  &browser_reset_size  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN            &kp UP_ARROW   &kp RIGHT            &kp BACKSPACE        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans              &trans         &trans               &resize_browser      &trans
+                        &trans  &trans  &trans    &to 0           &kp SPACE           &trans
             >;
         };
 
         numbers-media {
             bindings = <
-&kp ESC  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp C_VOLUME_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &kp PLUS
-&trans   &trans                &trans                &trans        &trans            &trans        &kp C_VOLUME_DOWN  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &kp ASTERISK
-&to 0    &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR    &kp K_MUTE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp EQUAL
-                                                     &trans        &trans            &trans        &kp RET            &kp NUMBER_0  &kp NUMBER_0
+&kp ESC  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &trans
+&trans   &trans                &trans                &trans        &trans            &trans        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &trans
+&to 0    &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR    &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &trans
+                                                     &trans        &trans            &trans        &kp RET       &kp NUMBER_0  &kp NUMBER_0
             >;
         };
     };
