@@ -140,6 +140,38 @@
             bindings = <&kp COLON &kp W &kp Q &kp A &kp RETURN>;
             label = "NVIM_SAVE_QUIT_ALL";
         };
+
+        harpoon1: harpoon1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_1>;
+            label = "HARPOON1";
+            wait-ms = <10>;
+        };
+
+        harpoon2: harpoon2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_2>;
+            label = "HARPOON2";
+            wait-ms = <200>;
+        };
+
+        harpoon3: harpoon3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_3>;
+            label = "HARPOON3";
+            wait-ms = <10>;
+        };
+
+        harpoon4: harpoon4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp NUMBER_4>;
+            label = "HARPOON4";
+            wait-ms = <10>;
+        };
     };
 
     combos {
