@@ -241,7 +241,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT_ARROW)  &browser_reset_size  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN            &kp UP_ARROW   &kp RIGHT            &kp BACKSPACE        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans              &trans         &trans               &resize_browser      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &harpoon1       &harpoon2           &harpoon3      &harpoon4            &resize_browser      &trans
                         &trans  &trans  &trans    &to 0           &kp SPACE           &trans
             >;
         };
