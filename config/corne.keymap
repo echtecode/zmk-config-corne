@@ -200,10 +200,10 @@
 
         window_management {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans         &trans             &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(LS(LC(H)))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LA(LS(LC(L)))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans         &trans             &trans  &trans
-                        &trans  &trans  &trans    &trans             &trans         &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &kp LA(F)  &trans    &kp LA(LS(LC(H)))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LA(LS(LC(L)))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans             &trans         &trans         &trans             &trans  &trans
+                        &trans  &trans     &trans    &trans             &trans         &trans
             >;
         };
     };
