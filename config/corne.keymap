@@ -152,7 +152,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q                          &homerow_mods LG(W) W      &kp E                          &homerow_mods LG(LS(R)) R  &kp T             &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O    &kp P             &kp DELETE
+&kp TAB         &kp Q                          &homerow_mods LG(W) W      &kp E                          &homerow_mods LG(LS(R)) R  &kp T             &homerow_mods LC(Y) Y  &kp U      &homerow_mods LG(LA(I)) I  &kp O    &kp P             &kp GRAVE
 &kp ESC         &homerow_navigation_layer 3 A  &homerow_amethyst LG(S) S  &homerow_navigation_layer 4 D  &homerow_mods LCMD F       &kp G             &kp H                  &kp J      &kp K                      &kp L    &kp BACKSPACE     &kp LC(B)
 &kp LEFT_SHIFT  &homerow_mods LG(Z) Z          &homerow_mods LG(X) X      &homerow_mods LG(C) C          &homerow_mods LG(V) V      &kp B             &kp N                  &kp M      &kp COMMA                  &kp DOT  &kp LA(NUMBER_1)  &kp LEFT_ALT
                                                                           &kp LCTRL                      &mo 1                      &kp LEFT_SHIFT    &kp RETURN             &kp SPACE  &tapdance_cmd_cmdbacktick
