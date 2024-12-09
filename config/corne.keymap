@@ -167,10 +167,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK          &browser_reset_size
-&trans  &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &trans
-&trans  &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION      &kp PIPE              &resize_browser
-                                        &trans                &trans             &trans              &kp LA(A)          &kp LA(B)        &kp LA(C)
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET              &kp MINUS              &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK          &browser_reset_size
+&trans  &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET      &kp RIGHT_BRACE        &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp NON_US_BACKSLASH  &trans
+&trans  &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS               &kp COLON              &kp SEMICOLON          &kp QUESTION      &kp PIPE              &resize_browser
+                                        &trans                &trans             &trans              &kp LA(LS(LC(LG(K))))  &kp LA(LS(LC(LG(C))))  &kp LA(LS(LC(LG(T))))
             >;
         };
 
@@ -195,6 +195,15 @@
 &trans   &trans                &trans                &trans        &trans            &trans             &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &trans
 &to 0    &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR         &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &trans
                                                      &kp K_MUTE    &kp C_VOL_DN      &kp C_VOLUME_UP    &kp RET       &kp NUMBER_0  &kp NUMBER_0
+            >;
+        };
+
+        window_management {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans         &trans             &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(LS(LC(H)))  &kp LA(LS(J))  &kp LA(LS(K))  &kp LA(LS(LC(L)))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans             &trans         &trans         &trans             &trans  &trans
+                        &trans  &trans  &trans    &trans             &trans         &trans
             >;
         };
     };
