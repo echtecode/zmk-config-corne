@@ -130,11 +130,6 @@
             key-positions = <15 16>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 20>;
-        };
-
         numbers-layer {
             bindings = <&mo 3>;
             key-positions = <14 15>;
