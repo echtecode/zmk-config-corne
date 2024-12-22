@@ -58,6 +58,13 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
         };
+
+        tab: tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAB";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp TAB>;
+        };
     };
 
     macros {
