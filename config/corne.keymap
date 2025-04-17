@@ -65,6 +65,15 @@
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp TAB>;
         };
+
+        tapdance_c: tapdance_c {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE_C";
+            #binding-cells = <0>;
+            bindings = <&homerow_mods LCMD C>, <&kp LG(C)>;
+
+            tapping-term-ms = <180>;
+        };
     };
 
     macros {
@@ -170,10 +179,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q                     &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R   &kp T    &kp Y       &kp U                        &homerow_mods LG(LA(I)) I  &kp O                        &kp P          &kp GRAVE
-&kp ESC         &kp A                     &homerow_amethyst LG(S) S  &kp D                  &kp F                       &kp G    &kp H       &kp J                        &kp K                      &kp L                        &kp BACKSPACE  &kp LC(B)
-&kp LEFT_SHIFT  &homerow_mods LEFT_ALT Z  &homerow_mods LEFT_GUI X   &homerow_mods LCTRL C  &homerow_mods LEFT_SHIFT V  &kp B    &kp N       &homerow_mods RIGHT_SHIFT M  &homerow_mods RCTRL COMMA  &homerow_mods RIGHT_GUI DOT  &kp RIGHT_ALT  &kp LEFT_ALT
-                                                                     &none                  &mo 1                       &mo 4    &kp RETURN  &kp SPACE                    &none
+&kp TAB         &kp Q                     &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R   &kp T             &kp Y       &kp U                        &homerow_mods LG(LA(I)) I  &kp O                        &kp P          &kp GRAVE
+&kp ESC         &kp A                     &homerow_amethyst LG(S) S  &kp D                  &kp F                       &kp G             &kp H       &kp J                        &kp K                      &kp L                        &kp BACKSPACE  &kp LC(B)
+&kp LEFT_SHIFT  &homerow_mods LEFT_ALT Z  &homerow_mods LEFT_GUI X   &homerow_mods LCTRL C  &homerow_mods LEFT_SHIFT V  &kp B             &kp N       &homerow_mods RIGHT_SHIFT M  &homerow_mods RCTRL COMMA  &homerow_mods RIGHT_GUI DOT  &kp RIGHT_ALT  &kp LEFT_ALT
+                                                                     &none                  &mo 1                       &kp LEFT_SHIFT    &kp RETURN  &kp SPACE                    &none
             >;
         };
 
