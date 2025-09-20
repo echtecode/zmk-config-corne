@@ -157,14 +157,19 @@
     combos {
         compatible = "zmk,combos";
 
-        mo-layer-2 {
+        mo_layer2 {
             bindings = <&mo 2>;
             key-positions = <15 16>;
         };
 
-        numbers-layer {
+        mo_layer3 {
             bindings = <&mo 3>;
             key-positions = <14 15>;
+        };
+
+        mo_layer4 {
+            bindings = <&mo 4>;
+            key-positions = <16 14>;
         };
     };
 
@@ -179,10 +184,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                     &homerow_mods LG(W) W      &kp E                  &homerow_mods LG(LS(R)) R   &kp T             &kp Y       &kp U                        &homerow_mods LG(LA(I)) I  &kp O                        &kp P          &none
-&none  &kp A                     &homerow_amethyst LG(S) S  &kp D                  &kp F                       &kp G             &kp H       &kp J                        &kp K                      &kp L                        &kp BACKSPACE  &none
-&none  &homerow_mods LEFT_ALT Z  &homerow_mods LEFT_GUI X   &homerow_mods LCTRL C  &homerow_mods LEFT_SHIFT V  &kp B             &kp N       &homerow_mods RIGHT_SHIFT M  &homerow_mods RCTRL COMMA  &homerow_mods RIGHT_GUI DOT  &kp RIGHT_ALT  &none
-                                                            &mo 4                  &mo 1                       &kp LEFT_SHIFT    &kp RETURN  &kp SPACE                    &none
+&kp TAB       &kp Q                  &kp W                      &kp E                  &homerow_mods LG(LS(R)) R  &kp T             &kp Y       &kp U      &homerow_mods LG(LA(I)) I  &kp O    &kp P          &kp LA(NUMBER_1)
+&kp ESCAPE    &kp A                  &homerow_amethyst LG(S) S  &kp D                  &kp F                      &kp G             &kp H       &kp J      &kp K                      &kp L    &kp BACKSPACE  &kp LC(B)
+&kp LEFT_ALT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B             &kp N       &kp M      &homerow_mods RCTRL COMMA  &kp DOT  &kp LG(SLASH)  &kp RIGHT_ALT
+                                                                &kp LCTRL              &mo 1                      &kp LEFT_SHIFT    &kp RETURN  &kp SPACE  &tapdance_cmd_cmdbacktick
             >;
         };
 
@@ -218,19 +223,19 @@
 
         numbers-media {
             bindings = <
-&none  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT         &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &none
-&none  &trans                &trans                &trans        &trans            &trans             &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &none
-&none  &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_CLR         &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &none
-                                                   &kp K_MUTE    &kp C_VOL_DN      &kp C_VOLUME_UP    &kp RET       &kp NUMBER_0  &kp NUMBER_0
+&none         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT         &kp PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS  &none
+&none         &trans                &trans                &trans        &trans            &trans             &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &none
+&bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4      &bt BT_CLR         &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &none
+                                                          &kp K_MUTE    &kp C_VOL_DN      &kp C_VOLUME_UP    &kp RET       &kp NUMBER_0  &kp NUMBER_0
             >;
         };
 
         window_management {
             bindings = <
-&trans  &trans  &trans  &kp LA(NUMBER_3)  &kp LA(NUMBER_1)  &trans    &trans           &trans           &trans           &trans         &trans  &trans
-&trans  &trans  &trans  &kp LA(LS(H))     &kp LA(LS(L))     &trans    &kp LA(LS(H))    &kp LA(LS(TAB))  &kp LA(LS(TAB))  &kp LA(LS(L))  &trans  &trans
-&trans  &trans  &trans  &trans            &trans            &trans    &trans           &trans           &trans           &trans         &trans  &trans
-                        &trans            &trans            &trans    &kp LA(LS(TAB))  &kp LA(LS(F))    &trans
+&trans  &trans  &trans  &trans  &trans                &trans              &trans             &kp LA(T)              &kp LA(X)  &kp LA(D)  &trans     &trans
+&trans  &trans  &trans  &trans  &trans                &trans              &kp LA(LC(LG(F)))  &kp LA(P)              &kp LA(C)  &kp LA(F)  &kp LA(E)  &trans
+&trans  &trans  &trans  &trans  &trans                &trans              &trans             &kp LA(Q)              &kp LA(S)  &kp LA(M)  &trans     &trans
+                        &trans  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LEFT))    &kp LA(LC(RIGHT))  &kp LA(LC(LG(RIGHT)))  &trans
             >;
         };
     };
