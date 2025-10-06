@@ -184,10 +184,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q                  &kp W                      &kp E                  &homerow_mods LG(LS(R)) R  &kp T             &kp Y       &kp U      &homerow_mods LG(LA(I)) I  &kp O    &kp P          &kp LA(NUMBER_1)
-&kp ESCAPE    &kp A                  &homerow_amethyst LG(S) S  &kp D                  &homerow_mods LCMD F       &kp G             &kp H       &kp J      &kp K                      &kp L    &kp BACKSPACE  &kp LC(B)
-&kp LEFT_ALT  &homerow_mods LG(Z) Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B             &kp N       &kp M      &homerow_mods RCTRL COMMA  &kp DOT  &kp LG(SLASH)  &kp RIGHT_ALT
-                                                                &kp LCTRL              &mo 1                      &kp LEFT_SHIFT    &kp RETURN  &kp SPACE  &tapdance_cmd_cmdbacktick
+&kp TAB       &kp Q  &kp W                      &kp E                  &homerow_mods LG(LS(R)) R  &kp T             &kp Y       &kp U      &homerow_mods LG(LA(I)) I  &kp O    &kp P          &kp LA(NUMBER_1)
+&kp ESCAPE    &kp A  &homerow_amethyst LG(S) S  &kp D                  &homerow_mods LCMD F       &kp G             &kp H       &kp J      &kp K                      &kp L    &kp BACKSPACE  &kp LC(B)
+&kp LEFT_ALT  &kp Z  &homerow_mods LG(X) X      &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B             &kp N       &kp M      &homerow_mods RCTRL COMMA  &kp DOT  &kp LG(SLASH)  &kp RIGHT_ALT
+                                                &kp LCTRL              &mo 1                      &kp LEFT_SHIFT    &kp RETURN  &kp SPACE  &tapdance_cmd_cmdbacktick
             >;
         };
 
