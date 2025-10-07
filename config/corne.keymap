@@ -77,34 +77,6 @@
     };
 
     macros {
-        browser_reset_size: browser_reset_size {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(PLUS) &kp LG(NUMBER_0)>;
-            label = "BROWSER_RESET_SIZE";
-        };
-
-        nvim_save: nvim_save {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp RETURN>;
-            label = "NVIM_SAVE";
-        };
-
-        nvim_save_quit: nvim_save_quit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp Q &kp RETURN>;
-            label = "NVIM_SAVE_QUIT";
-        };
-
-        nvim_save_quit_all: nvim_save_quit_all {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp Q &kp A &kp RETURN>;
-            label = "NVIM_SAVE_QUIT_ALL";
-        };
-
         harpoon1: harpoon1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -150,6 +122,22 @@
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp LEFT_PARENTHESIS>;
             label = "TMUX_PREVIOUS_SESSION";
+            wait-ms = <5>;
+        };
+
+        phpstorm_search_files: phpstorm_search_files {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp S &kp F>;
+            label = "PHPSTORM_SEARCH_FILES";
+            wait-ms = <5>;
+        };
+
+        phpstorm_search_symbol: phpstorm_search_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp S &kp S>;
+            label = "PHPSTORM_SEARCH_SYMBOL";
             wait-ms = <5>;
         };
     };
@@ -199,9 +187,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK   &kp LG(LS(F))
-&kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSLASH  &kp LG(P)
-&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION      &kp PIPE       &kp LG(LS(P))
+&kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK   &phpstorm_search_symbol
+&kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSLASH  &phpstorm_search_files
+&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION      &kp PIPE       &none
                                                   &trans                &trans             &trans              &kp TAB            &kp GRAVE        &kp ESC
             >;
         };
