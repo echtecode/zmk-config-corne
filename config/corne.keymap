@@ -187,10 +187,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK   &phpstorm_search_symbol
-&kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSLASH  &phpstorm_search_files
-&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION      &kp PIPE       &none
-                                                  &trans                &trans             &trans              &kp TAB            &kp GRAVE        &kp ESC
+&kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS         &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK   &phpstorm_search_files
+&kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSLASH  &kp LG(NUMBER_1)
+&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON         &kp SEMICOLON          &kp QUESTION      &kp PIPE       &phpstorm_search_symbol
+                                                  &trans                &trans             &trans              &kp TAB            &kp LG(NUMBER_1)  &kp ESC
             >;
         };
 
