@@ -233,8 +233,8 @@
         window_management {
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans                  &trans                 &kp LA(T)          &kp LA(X)  &kp LA(D)  &trans     &trans
-&trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(LC(LG(F)))      &kp LA(Z)          &kp LA(C)  &kp LA(F)  &kp LA(E)  &trans
-&trans  &trans  &trans  &trans  &trans            &trans                  &trans                 &kp LA(Q)          &kp LA(S)  &kp LA(M)  &trans     &trans
+&trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(LC(LG(F)))      &kp LA(P)          &kp LA(C)  &kp LA(F)  &kp LA(E)  &trans
+&trans  &trans  &trans  &trans  &trans            &trans                  &trans                 &kp LA(Z)          &kp LA(S)  &kp LA(M)  &trans     &trans
                         &trans  &kp LA(LC(LEFT))  &kp LA(LC(LG(LEFT)))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(RIGHT))  &trans
             >;
         };
