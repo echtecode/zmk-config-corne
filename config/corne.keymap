@@ -189,7 +189,7 @@
             bindings = <
 &kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS         &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK   &phpstorm_search_files
 &kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE   &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSLASH  &kp LG(SEMICOLON)
-&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON         &kp SEMICOLON          &kp QUESTION      &kp PIPE       &phpstorm_search_symbol
+&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON         &kp SEMICOLON          &kp QUESTION      &kp PIPE       &kp LG(SQT)
                                                   &trans                &trans             &trans              &kp TAB            &kp LG(NUMBER_1)  &kp ESC
             >;
         };
