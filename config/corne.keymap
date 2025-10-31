@@ -10,42 +10,11 @@
 
 / {
     behaviors {
-        resize_browser: resize_browser {
-            compatible = "zmk,behavior-tap-dance";
-            label = "RESIZE_BROWSER";
-            #binding-cells = <0>;
-            bindings = <&kp LG(MINUS)>, <&kp LG(PLUS)>;
-        };
-
         tapdance_cmd_cmdbacktick: tapdance_cmd_cmdbacktick {
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE_CMD_CMDBACKTICK";
             #binding-cells = <0>;
             bindings = <&kp LCMD>, <&kp LG(GRAVE)>;
-        };
-
-        homerow_amethyst: homerow_amethyst {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_AMETHYST";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <14 15 16 18 21 20 19 31 30 25 7 8 5>;
-        };
-
-        homerow_navigation_layer: homerow_navigation_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_NAVIGATION_LAYER";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <21 20 19 7 8 9 15 16 38 36>;
         };
 
         homerow_mods: homerow_mods {
@@ -59,20 +28,11 @@
             flavor = "tap-preferred";
         };
 
-        tab: tab {
+        tapdance_i: tapdance_i {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAB";
+            label = "TAPDANCE_I";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp TAB>;
-        };
-
-        tapdance_c: tapdance_c {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_C";
-            #binding-cells = <0>;
-            bindings = <&homerow_mods LCMD C>, <&kp LG(C)>;
-
-            tapping-term-ms = <180>;
+            bindings = <&kp I>, <&kp LG(LA(I))>;
         };
     };
 
@@ -172,7 +132,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB       &kp Q  &kp W                  &kp E                  &homerow_mods LG(LS(R)) R  &kp T             &kp Y       &kp U      &kp I                      &kp O    &kp P           &kp LA(NUMBER_1)
+&kp TAB       &kp Q  &kp W                  &kp E                  &homerow_mods LG(LS(R)) R  &kp T             &kp Y       &kp U      &tapdance_i                &kp O    &kp P           &kp LA(NUMBER_1)
 &kp ESCAPE    &kp A  &kp S                  &kp D                  &homerow_mods LCMD F       &kp G             &kp H       &kp J      &kp K                      &kp L    &kp BACKSPACE   &kp LC(B)
 &kp LEFT_ALT  &kp Z  &homerow_mods LG(X) X  &homerow_mods LG(C) C  &homerow_mods LG(V) V      &kp B             &kp N       &kp M      &homerow_mods RCTRL COMMA  &kp DOT  &kp LEFT_SHIFT  &kp LG(SLASH)
                                             &kp LCTRL              &mo 1                      &kp LEFT_SHIFT    &kp RETURN  &kp SPACE  &tapdance_cmd_cmdbacktick
@@ -187,9 +147,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &homerow_mods LG(LA(I)) UNDERSCORE  &kp AMPERSAND     &kp ASTERISK   &kp LG(LS(P))
-&kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS               &kp GREATER_THAN  &kp BACKSLASH  &kp LG(P)
-&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON                       &kp QUESTION      &kp PIPE       &kp LC(GRAVE)
+&kp LA(NUMBER_2)  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH              &kp DOLLAR         &kp PERCENT         &kp CARET          &kp MINUS        &kp UNDERSCORE         &kp AMPERSAND     &kp ASTERISK   &kp LG(LS(P))
+&kp BACKSPACE     &kp SLASH        &kp LESS_THAN  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE     &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &kp BACKSLASH  &kp LG(P)
+&kp DELETE        &kp TILDE        &kp GRAVE      &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES  &kp EQUAL           &kp PLUS           &kp COLON        &kp SEMICOLON          &kp QUESTION      &kp PIPE       &kp LC(GRAVE)
                                                   &trans                &trans             &kp C_PLAY_PAUSE    &kp TAB            &kp ESC          &kp LCMD
             >;
         };
