@@ -182,8 +182,17 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(B)              &kp LA(T)          &kp LA(X)  &kp LA(M)  &trans     &trans
 &trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(LC(LG(F)))      &kp LA(A)          &kp LA(C)  &kp LA(F)  &kp LA(E)  &trans
-&trans  &trans  &trans  &trans  &trans            &trans                  &trans                 &kp LA(Z)          &kp LA(S)  &kp LA(D)  &trans     &trans
+&trans  &trans  &trans  &to 5   &trans            &trans                  &trans                 &kp LA(Z)          &kp LA(S)  &kp LA(D)  &trans     &trans
                         &trans  &kp LA(LC(LEFT))  &kp LA(LC(LG(LEFT)))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(RIGHT))  &trans
+            >;
+        };
+
+        select-cut-copy-paste {
+            bindings = <
+&to 0   &trans     &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &to 0
+&to 0   &kp LG(A)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
