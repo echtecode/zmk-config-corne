@@ -180,7 +180,7 @@
 
         window_management {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(LS(G))          &kp LA(LS(T))      &kp LA(LS(X))  &kp LA(LS(M))  &trans         &trans
+&trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(LS(G))          &kp LA(LS(T))      &kp LA(LS(X))  &kp LA(LS(M))  &kp LA(LS(N))  &trans
 &trans  &trans  &trans  &trans  &trans            &trans                  &kp LA(LC(LG(F)))      &kp LA(LS(A))      &kp LA(LS(C))  &kp LA(LS(F))  &kp LA(LS(E))  &trans
 &trans  &trans  &trans  &to 5   &trans            &trans                  &kp LA(LS(Q))          &kp LA(LS(Z))      &kp LA(LS(S))  &kp LA(LS(D))  &trans         &trans
                         &trans  &kp LA(LC(LEFT))  &kp LA(LC(LG(LEFT)))    &kp LA(LC(LG(RIGHT)))  &kp LA(LC(RIGHT))  &trans
